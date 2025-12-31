@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,27 +8,45 @@
 html,body{
     height: 100%;
     width: 100%;
+    font:600 16px "Titillium Web", sans-serif;
 }
 main{
-   margin: 267px 16px 0px 275px;
+   margin: 150px 10px 0px 150px;
 }
 table {
     width: 100%;
     text-align: left;
-   border-collapse: collapse;
+    border-collapse:collapse ;
+    
 }
 tr:nth-child(even) {
-    background-color: #B2DFFF;
+    background-color: rgba(178, 223, 255, 0.3);
 }
 tr>td{
-    padding:20px 0px 20px 20px;
+    padding:20px 0px 20px 0px;
+   
+    
 }
-.table-data-icons{
-    display: flex;
-    gap: 15px;
+td:first-of-type{
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+ padding-left: 30px;
+}
+
+td:last-of-type{
+     border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 70px;
+}
+img:first-of-type{
+    margin-right: 10px;
+}
+td:nth-last-child(n+2){
+    width: 240px;
 }
 tr:hover{
-    background-color: #f2cdcd;
-    transform: scale(1.01);
+    background-color: #f0ecec;
+    transform: scale(1.02);
     transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px 3px rgba(178, 223, 255, 0.3);
 }
